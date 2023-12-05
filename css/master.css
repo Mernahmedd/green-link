@@ -38,6 +38,8 @@ ul {
 .page {
   background-color: #f1f5f9;
   min-height: 100vh;
+  direction: rtl !important;
+  text-align: right;
 }
 
 /* Start Content */
@@ -93,7 +95,7 @@ ul {
   height: 3px;
   position: absolute;
   bottom: -10px;
-  left: 0;
+  right: 0;
 }
 .page h1::before {
   background-color: white;

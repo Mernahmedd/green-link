@@ -62,13 +62,13 @@ body {
 
 .container {
     max-width: 1340px !important;
-    /* direction: rtl; */
-}
-
-.ar_style{
     direction: rtl;
     text-align: right;
 }
+
+/* .ar_style{
+    direction: rtl;
+} */
 
 a {
     text-decoration: none !important;
@@ -119,6 +119,36 @@ li {
     display: flex;
     font-size: 19px;
 
+}
+
+@media(max-width: 1199px){
+    .navbar div button{
+        padding: 10px;
+    } 
+}
+
+@media(max-width: 1177px){
+    .navbar div button{
+        padding: 5px;
+    } 
+}
+
+@media(max-width: 1151px){
+    .navbar div button{
+        padding: 2px;
+        font-size: 13px;
+    } 
+}
+
+@media(max-width: 1111px){
+    .navbar div button{
+        /* display: block; */
+        margin: 3px;
+        font-size: 14px;
+    } 
+    .navbar .navbar-collapse ul li a{
+        font-size: 16px;
+    } 
 }
 
 /* ******************************************************* */
@@ -801,7 +831,12 @@ h1, h2, h3, h4, h5, h6{
     color:var(--white);
     position:relative;
     border:0;
-    text-align:center;
+    text-align:right !important;
+    
+}
+
+.btn:hover{
+    color: white !important;
     
 }
 
@@ -815,29 +850,6 @@ h1, h2, h3, h4, h5, h6{
     text-transform:uppercase;
 }
 
-.btn_3:before{
-    content:"";
-    border-radius:50%;
-    background-color:rgba(255,255,255,0.2);
-    position:absolute;
-    left:0;
-    top:50%;
-    width:40px;
-    height:40px;
-    transition:0.5s;
-    transform:translate(0%, -50%);
-}
-
-.btn_3:after{
-    content:"\f178";
-    font-family:"FontAwesome";
-    margin-left:5px;
-}
-
-.btn_3:hover:before{
-    border-radius:40px;
-    width:100%;
-}
 
 @media (max-width:920px){
     .flex{
@@ -946,7 +958,7 @@ ul{
 }
 
 .slider article{
-    width:60%;
+    width:100%;
     margin-top:4rem;
     color: #fff;
     z-index:11;
@@ -1071,7 +1083,7 @@ a.current_dot {
     background-color: transparent;
     border: 0;
     outline: 0;
-    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
     font-size: 20px;
     font-weight: 700;
     padding: 12px 10px;
@@ -1194,7 +1206,11 @@ a.current_dot {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    z-index: 100;
+    direction: rtl;
+    text-align: right !important;
 }
+
 /* End Team */
 /* Start Contact us */
 .contact{

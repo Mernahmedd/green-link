@@ -267,4 +267,8 @@ label {
     width: 100%;
 }
 
+.btn-reg{
+    text-align: center !important;
+}
+
 /* End Login */
